@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-weight: 200;
+    color: black;
+    background-color: #f7ebebda;
+}
+
+#barra_lateral{
+    grid-area: bar_lateral;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 10vw 0 15vw;
+    padding: 0 2vw 0 2vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+nav p, #musicas p {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px; 
+}
+
+#paragrafo_1{
+    grid-area: parag1;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'parag1 parag1 parag1 bar_lateral';
+    justify-content: center;
+    margin-left: 7vw;
+
+}
+
+header p{
+    font-size: 20px;
+    margin-top: 5vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#musicas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav p, #musicas p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+audio{
+    width: 80%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+main{
+    margin-right: 45vw;
+    margin-left: 7vw;
+}
+
+
+h1{
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 36px;
+    border: solid 5px black;
+    margin: 30 auto 70px auto; 
+    padding: 20px 30px 50px 50px;
+    max-width: 500px;
+    max-height: 500px;
+    transition: background-color 0.3s, font-size 0.3s, height 0.3s, border 0.3s;
+    text-align: center;
+}
+
+hr{
+    margin-top: 100px;
+}
+h2{
+    margin-top: 100px;
+}
+
+p{
+    font-family: 'Times New Roman', serif; 
+    font-size: 18px; 
+    line-height: 1.6;
+    text-align: justify;
+    direction: ltr;
+    text-decoration: none;
+    text-indent: 20px; 
+    letter-spacing: 1px;
+   
+}
+
+a{
+    font-family: 'Times New Roman', serif;
+    text-decoration: none;
+    color: #a03aff96;
+    transition: color 0.3s;
+}
+
+
+
+a:hover {
+    color: #0400ff94;
+}
+
+a:visited {
+    color: #e408088f; 
+}
+
+table {
+    border: 1px solid #000000;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+th {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #ffffff;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.texto {
+    flex-grow: 1;
+}
+
+section.color_red {
+    margin-top: 20px;
+}
+@media only screen and (max-width: 992px){
+
+    main, header{
+        margin-right: 10vw;
+    }
+
+    #Bar_lateral{
+        display:none
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    table, tr, th, td{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    iframe{
+        width: 80vw;
+        height: 30vh;
+    }
+    
+    img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+   body p{
+        font-size: 15px;
+
+    }
+
+    ul, ol{
+        font-size: 15px;
+    }
+        
+    
+
+}
